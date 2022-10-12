@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="bottom"
+        android:paddingStart="100dp"
+        android:paddingBottom="10dp"
+        android:text="@string/been_there"
+        android:textColor="#D3CA1E"
+        android:textSize="36sp"
+        tools:ignore="RtlSymmetry" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:paddingHorizontal="30dp"
+        android:stretchColumns="*"
+        android:weightSum="2">
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:paddingEnd="30dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:paddingStart="30dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:paddingEnd="30dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:paddingStart="30dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/done_that"
+        android:textColor="#D3CA1E"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:background="#000060"
+        android:gravity="center"
+        android:text="@string/version"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>
